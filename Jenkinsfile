@@ -10,6 +10,11 @@ pipeline {
         HOME = '.'
     }
     stages {
+        stage('Permit') {
+            steps {
+                sh 'sudo chmod -R 777 ./jenkins/scripts/*.sh'
+            }
+        }
         stage('Build') {
             steps {
                 sh 'npm install'
