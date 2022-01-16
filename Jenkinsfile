@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('Permit') {
             steps {
-                sh 'sudo chmod -R 777 ./jenkins/scripts/*.sh'
+                sh 'chmod -R 777 ./jenkins/scripts/*.sh'
             }
         }
         stage('Build') {
