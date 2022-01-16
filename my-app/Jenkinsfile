@@ -15,6 +15,7 @@ pipeline {
                 sh 'npm install'
                 sh 'pwd'
                 sh 'dir'
+                sh 'pwd'
             }
         }
         stage('Test') {
